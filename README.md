@@ -56,14 +56,22 @@ import numpy as np
 
 L = list(map(int, input().split()))
 f = np.bincount(L)
+
 p = f / f.sum()
 x = np.arange(len(f))
 
+# Print x and p(x)
+print("x\tp(x)")
+for xi, pi in zip(x, p):
+    print(f"{xi}\t{pi:.3f}")
+
+# Calculations
 mean = np.dot(x, p)
 var = np.dot(x**2, p) - mean**2
 SD = np.sqrt(var)
 
-print(f"The Mean arrival rate is {mean:.3f}")
+# Final results
+print(f"\nThe Mean arrival rate is {mean:.3f}")
 print(f"The Variance of arrival from feeder is {var:.3f}")
 print(f"The Standard deviation of arrival from feeder is {SD:.3f}")
 
@@ -72,7 +80,7 @@ print(f"The Standard deviation of arrival from feeder is {SD:.3f}")
 
 
 # Output : 
-<img width="653" height="243" alt="image" src="https://github.com/user-attachments/assets/fa44c15b-1933-4d96-9a1c-9f34006dcfcb" />
+<img width="668" height="579" alt="image" src="https://github.com/user-attachments/assets/81f94d91-5c69-4bf9-9d26-cf3850a61e78" />
 
 
 # Results :
