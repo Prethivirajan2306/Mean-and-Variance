@@ -1,5 +1,6 @@
 #  Mean and variance of a discrete  distribution
-
+<h2>Developed by : Prethivirajan L</h2>
+<h2>Register Number : 212224040251</h2>
 
 # Aim : 
 
@@ -48,8 +49,7 @@ It shows the distance of a random variable from its mean. It is calcualted as
 ![image](https://user-images.githubusercontent.com/103921593/229993174-5b67e57e-3e01-4ac4-9f83-410a932b22bf.png)
 
 # Program :
-# Developed by : Prethivirajan L
-# Register Number : 212224040251
+
 
 ```python
 import numpy as np
